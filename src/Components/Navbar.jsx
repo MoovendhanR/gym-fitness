@@ -27,7 +27,17 @@ import {
     const { isOpen, onToggle } = useDisclosure();
   
     return (
-      <Box  >
+        <>
+      
+      <Box 
+       //bgColor="white"
+        boxShadow="rgba(0, 0, 0, 0.1) 0px 4px 12px"
+        w="100%"
+        zIndex={10}
+        borderBottom="1px"
+        borderBottomColor="#c5c7cc"
+        pos="sticky"
+        top="0">
         
         <Flex
           bg={useColorModeValue('#363636', 'gray.800')}
@@ -74,23 +84,19 @@ import {
           </Flex>
   
           <Stack
-            flex={{ base: 1, md: 0 }}
+            flex={{ base: 1,md:0 }}
             justify={'flex-end'}
             direction={'row'}
-            spacing={6}>
-                <Button
-                 color={'white'}
-                 bg={'pink.400'}
-
-                >JOIN</Button>
+            spacing={8}>
+               
             <Button
             as={'a'}
             display={{ base: 'none', md: 'inline-flex' }}
-            fontSize={'sm'}
             fontWeight={600}
             color={'white'}
-            bg={'pink.400'}
-            href={'#'}
+            size={['sm', 'md', 'lg']} // Define different sizes for small, medium, and large screens
+           fontSize={['sm', 'md', 'lg']} // Define different font sizes for small, medium, and large screens
+            p={['2', '4', '6']} // Define different padding values for small, medium, and large screens
            >
             JOIN THE MOVEMENT
           </Button> 
@@ -101,6 +107,7 @@ import {
           <MobileNav />
         </Collapse>
       </Box>
+      </>
     );
   }
   
