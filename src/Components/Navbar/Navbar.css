@@ -40,3 +40,23 @@
    flex:1;
    margin-left: 300px;
 }
+
+
+@media only screen and (max-width: 480px) {
+    ul>li{
+        display: none;
+    }
+    
+.nav-btn{
+    flex:1;
+    margin-left: -300px;
+ }
+ 
+.btn{
+    padding: 0.7rem;
+  background-color:black;
+  color: white;
+  border-radius: 10px;
+  
+}
+}
