@@ -1,17 +1,18 @@
-import React from "react";
-import "./App.css"
+import './App.css';
+import Banner from './Components/Banner/Banner';
+import LastConatainer from './Components/Last-container/LastConatainer';
+import Logobanner from './Components/Logo-Banner/Logobanner';
+import Navbar from './Components/Navbar/Navbar';
 
-import Banner from "./Components/Banner";
-import Navbar from "./Components/Navbar";
-import AnimatedCursor from "./Components/AnimatedCursor";
 
 function App() {
   return (
-    <>
-  <AnimatedCursor/>
-  <Navbar/>
-  <Banner/> 
-    </>
+    <div className="container">
+     <Navbar/>
+     <Banner/>
+     <Logobanner/>
+     <LastConatainer/>
+    </div>
   );
 }
 

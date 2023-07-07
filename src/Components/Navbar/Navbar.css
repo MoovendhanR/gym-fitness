@@ -1,0 +1,42 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.nav-frist{ 
+
+    flex: 2;
+    font-size: 30px;
+}
+.nav-frist span{
+    color: orange;
+}
+
+.menu{
+    flex:4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+
+}
+.menu li{
+    list-style-type: none
+}
+.menu li:hover{
+    text-decoration:underline;
+    cursor: pointer;
+}
+
+.btn{
+    padding: 1.2rem;
+  background-color:black;
+  color: white;
+  border-radius: 10px;
+  
+}
+.nav-btn{
+   flex:1;
+   margin-left: 300px;
+}
